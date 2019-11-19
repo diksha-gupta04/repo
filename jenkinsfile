@@ -2,18 +2,9 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
-				mvm compile
+				sh 'mvn --version'
 			}
 		}
-		stage("Test") {
-			steps {
-				mvn test
-			}
-		}
-		stage("Run") {
-			steps {
-				mvn run
-			}
-		}
+		
 	}
 }
