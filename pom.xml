@@ -15,15 +15,23 @@
       <version>4.11</version>
     </dependency>
   </dependencies>
+  
    <properties>
+     <junit.jupiter.version>4.8.2</junit.jupiter.version>
    <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
    </properties>
-   <plugin>
-  <groupId>org.eclipse.jetty</groupId>
-  <artifactId>jetty-maven-plugin</artifactId>
-  <version>9.4.22.v20191022</version>
-</plugin>
+  
+ <build>
+ <plugins>
+  <plugin>
+  	<groupId>org.eclipse.jetty</groupId>
+  	<artifactId>jetty-maven-plugin</artifactId>
+  	<version>9.4.22.v20191022</version>
+  </plugin>
+ </plugins>
+ </build>
+  
   
 </project>
 
