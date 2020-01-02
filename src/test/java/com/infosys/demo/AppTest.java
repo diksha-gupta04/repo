@@ -10,6 +10,6 @@ public class AppTest
 	@Test
     public void testApp()
     {
-        Assert.assertEquals(App.message(), "Hello");
+        Assert.assertEquals(App.message(), "Hello Programmer");
     }
 }
