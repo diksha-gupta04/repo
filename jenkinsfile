@@ -3,17 +3,17 @@ pipeline {
 		dockerfile true
 	}
 	stages {
-		stage("Build") {
+		stage("Building") {
 			steps {
 				sh 'mvn clean install'
 			}
 		}
-		stage("Test") {
+		stage("Testing") {
 			steps {
 				sh 'mvn compile'
 			}
 		}
-		stage("Run") {
+		stage("Running") {
 			steps {
 				sh 'mvn test'
 			}
